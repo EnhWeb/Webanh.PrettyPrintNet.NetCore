@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace PrettyPrintNet.Tests
+namespace Webanh.PrettyPrintNet.NetCore.Tests
 {
     [TestFixture]
     // ReSharper disable once InconsistentNaming

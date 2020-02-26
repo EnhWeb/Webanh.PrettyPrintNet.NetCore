@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PrettyPrintNet.InternalTypes;
+using Webanh.PrettyPrintNet.NetCore.InternalTypes;
 
-namespace PrettyPrintNet
+namespace Webanh.PrettyPrintNet.NetCore
 {
     /// <summary>
     ///     Utilities and helper code for working with TimeSpan.
@@ -25,7 +25,7 @@ namespace PrettyPrintNet
         {
             Formats = new Dictionary<UnitStringRepresentation, TimeFormat>
             {
-                {UnitStringRepresentation.Long, new TimeFormat(", ", " and ", " ")},
+                {UnitStringRepresentation.Long, new TimeFormat(", ", " ", " ")},
                 {UnitStringRepresentation.Short, new TimeFormat(" ", " ", " ")},
                 {UnitStringRepresentation.CompactWithSpace, new TimeFormat(" ", " ", "")},
                 {UnitStringRepresentation.Compact, new TimeFormat("", "", "")}
@@ -320,19 +320,19 @@ namespace PrettyPrintNet
             switch (unit)
             {
                 case TimeSpanUnit.Days:
-                    return value == 1 ? "day" : "days";
+                    return value == 1 ? "天" : "天";
 
                 case TimeSpanUnit.Hours:
-                    return value == 1 ? "hour" : "hours";
+                    return value == 1 ? "小时" : "小时";
 
                 case TimeSpanUnit.Minutes:
-                    return value == 1 ? "minute" : "minutes";
+                    return value == 1 ? "分钟" : "分钟";
 
                 case TimeSpanUnit.Seconds:
-                    return value == 1 ? "second" : "seconds";
+                    return value == 1 ? "秒" : "秒";
 
                 case TimeSpanUnit.Milliseconds:
-                    return value == 1 ? "millisecond" : "milliseconds";
+                    return value == 1 ? "毫秒" : "毫秒";
 
                 //case TimeSpanUnit.Microseconds:
                 //    return value == 1 ? "microsecond" : "microseconds";
@@ -350,19 +350,19 @@ namespace PrettyPrintNet
             switch (unit)
             {
                 case TimeSpanUnit.Days:
-                    return value == 1 ? "day" : "days";
+                    return value == 1 ? "天" : "天";
 
                 case TimeSpanUnit.Hours:
-                    return value == 1 ? "hr" : "hrs";
+                    return value == 1 ? "小时" : "小时";
 
                 case TimeSpanUnit.Minutes:
-                    return value == 1 ? "min" : "mins";
+                    return value == 1 ? "分钟" : "分钟";
 
                 case TimeSpanUnit.Seconds:
-                    return value == 1 ? "sec" : "secs";
+                    return value == 1 ? "秒" : "秒";
 
                 case TimeSpanUnit.Milliseconds:
-                    return value == 1 ? "msec" : "msecs";
+                    return value == 1 ? "毫秒" : "毫秒";
 
                 //case TimeSpanUnit.Microseconds:
                 //    return value == 1 ? "µsec" : "µsecs";
@@ -380,19 +380,19 @@ namespace PrettyPrintNet
             switch (unit)
             {
                 case TimeSpanUnit.Days:
-                    return "d";
+                    return "天";
 
                 case TimeSpanUnit.Hours:
-                    return "h";
+                    return "时";
 
                 case TimeSpanUnit.Minutes:
-                    return "m";
+                    return "分";
 
                 case TimeSpanUnit.Seconds:
-                    return "s";
+                    return "秒";
 
                 case TimeSpanUnit.Milliseconds:
-                    return "ms";
+                    return "毫秒";
 
                 //case TimeSpanUnit.Microseconds:
                 //    return value == 1 ? "microsecond" : "microseconds";

@@ -1,7 +1,7 @@
 ﻿#region Copyright
 
 // 
-// Copyright © 2013-2013 by Initial Force AS.  All rights reserved.
+// Copyright © 2013-2020 by webanh.  All rights reserved.
 
 #endregion
 
@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace PrettyPrintNet
+namespace Webanh.PrettyPrintNet.NetCore
 {
     public delegate string GetSuffixFunc(double value);
 

@@ -1,4 +1,4 @@
-﻿namespace PrettyPrintNet
+﻿namespace Webanh.PrettyPrintNet.NetCore
 {
     public enum TimeSpanUnit
     {

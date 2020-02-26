@@ -1,4 +1,4 @@
-namespace PrettyPrintNet.InternalTypes
+namespace Webanh.PrettyPrintNet.NetCore.InternalTypes
 {
     internal class TimeFormat
     {
